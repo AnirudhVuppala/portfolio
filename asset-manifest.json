@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.30b199d1.css",
+    "main.js": "/portfolio/static/js/main.5d610672.js",
+    "static/media/BackForHome.jpeg": "/portfolio/static/media/BackForHome.ec57b06fb93d7fb927e2.jpeg",
+    "index.html": "/portfolio/index.html",
+    "main.30b199d1.css.map": "/portfolio/static/css/main.30b199d1.css.map",
+    "main.5d610672.js.map": "/portfolio/static/js/main.5d610672.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30b199d1.css",
+    "static/js/main.5d610672.js"
+  ]
+}
