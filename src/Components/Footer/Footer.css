@@ -1,0 +1,26 @@
+.footerDiv {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footerName {
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding-bottom: 1.5rem;
+}
+
+.footerPara {
+    font-size: .9rem;
+    padding-right: 18rem;
+}
+
+.footerHr {
+    width: 90%;
+    align-items: center;
+    text-align: center;
+}
+
+.footerPar {
+    font-size: .7rem;
+}

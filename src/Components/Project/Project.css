@@ -1,0 +1,40 @@
+.ProjectDiv {
+     font-family: 'Montserrat', sans-serif;
+}
+
+.projHead {
+     font-weight: 600;
+     margin-bottom: 2rem;
+}
+
+.paraTag {
+     padding: 0rem 20rem;
+     text-align: center;
+     font-size: 1.1rem;
+     font-weight: 400;
+}
+
+.projImg {
+     height: 20rem;
+     border-radius: .4rem;
+}
+
+.projectName {
+     font-size: 1.8rem;
+     font-weight: 700;
+}
+
+.projectPara {
+     padding: 0rem 9rem 0rem 0rem;
+}
+
+.projectBtn {
+     border: none;
+     border-radius: .3rem;
+     padding: .8rem 2.5rem;
+     background-color: rgba(153, 153, 153, .2);
+}
+.projrow
+{
+     margin-bottom: 7rem;
+}
