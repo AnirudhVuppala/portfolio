@@ -1,0 +1,78 @@
+.ContactDiv {
+     position: relative;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.backgroundImg2 {
+     background: url('../../../public/BackForHome.jpeg');
+     opacity: 0.15;
+     width: 100%;
+     height: 100%;
+     z-index: 0;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     position: absolute;
+}
+
+.ContactHead {
+     /* margin: 3rem 0rem 0rem 0rem !important; */
+     font-weight: 600;
+     margin-bottom: 0rem;
+     padding: 8rem 0rem 0rem 0rem;
+}
+
+.ContactParaTag {
+     padding: 0rem 20rem;
+     text-align: center;
+     font-size: 1.1rem;
+     font-weight: 400;
+}
+
+.formDiv {
+     background: white;
+     z-index: 1;
+     width: 55vw;
+     opacity: 1;
+     margin-bottom: 13rem !important;
+}
+
+.contactLabel {
+     font-size: .85rem;
+     font-weight: 600;
+     color: #666;
+}
+
+.contactInp {
+     color: #333;
+     background-color: #f0f0f0;
+     border: none;
+     border-radius: .2rem;
+     padding: 1rem;
+     font-size: .9rem;
+     font-weight: 600;
+}
+
+.contactInp::placeholder {
+     color: #aaaaaa;
+}
+
+.contactBtn {
+     background-color: #000000;
+     opacity: .8;
+     color: #FFFFFF;
+     border-radius: .3rem;
+     padding: .8rem 3rem;
+     font-size: 1.1rem;
+}
+
+@media (max-width: 992px) {
+    .ContactParaTag {
+        padding: 0rem 1rem;
+    }
+
+    .formDiv {
+          width: 87vw;
+          max-width: 35rem;
+    }
+}

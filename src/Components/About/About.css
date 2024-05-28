@@ -1,0 +1,69 @@
+/* About.css */
+
+/* General styles */
+.AboutDiv {
+     background-color: #fafafa;
+     padding: 8rem 0rem 5rem 0rem;
+ }
+ 
+ .childDiv {
+     font-family: 'Montserrat', sans-serif;
+ }
+ 
+ .Hr {
+     border: 0.15rem solid black;
+     width: 3rem;
+     border-radius: 0.3rem;
+ }
+ 
+ .aboutHead {
+     font-weight: 600;
+     margin-bottom: 2rem;
+ }
+ 
+ .paraTag {
+     padding: 0 2rem;
+     text-align: center;
+     font-size: 1.1rem;
+     font-weight: 400;
+ }
+ 
+ .skillP {
+     background-color: rgba(153, 153, 153, 0.2);
+     font-weight: 500;
+     color: #666;
+     border-radius: 0.2rem;
+     font-size: 0.95rem;
+     margin: 0.25rem;
+ }
+ 
+ .contactBtn {
+     padding: 0.9rem 2rem;
+     background-color: rgba(144, 144, 144, 0.3);
+     font-weight: 600;
+     color: #666;
+     border: none;
+     border-radius: 0.3rem;
+ }
+ 
+ /* Media queries for responsiveness */
+ @media (max-width: 992px) {
+     .aboutHead {
+         font-size: 2rem;
+     }
+ 
+     .paraTag {
+         font-size: 1rem;
+         padding: 0 2rem !important;
+     }
+
+     .somePara {
+          padding: 2rem 2rem !important;
+     }
+ 
+     .contactBtn {
+         padding: 0.7rem 1.5rem;
+         font-size: 1rem;
+     }
+ }
+ 
