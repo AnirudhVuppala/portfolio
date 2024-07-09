@@ -1,12 +1,36 @@
-import React from "react";
-import './Contact.css';
+import * as React from 'react';
 import { useForm } from "react-hook-form";
+import axios from "axios";
+import { Snackbar, Alert } from '@mui/material';
+import './Contact.css';
 
-function Contact() {
-    const { register, handleSubmit } = useForm();
+export default function Contact() {
+    const { register, handleSubmit, reset } = useForm();
+    const [open, setOpen] = React.useState(false);
+    const [alertMessage, setAlertMessage] = React.useState('');
+    const [alertSeverity, setAlertSeverity] = React.useState('success');
+
+    const handleClick = (message, severity) => {
+        setAlertMessage(message);
+        setAlertSeverity(severity);
+        setOpen(true);
+    };
+
+    const handleClose = (event, reason) => {
+        if (reason === 'clickaway') {
+            return;
+        }
+        setOpen(false);
+    };
+
     const onSubmit = (data) => {
-        console.log(data);
-    }
+        axios.post('https://portfolioserver-20vb.onrender.com/api/contact', data).then((response) => {
+            handleClick("Form submitted successfully!", "success");
+            reset(); // Reset form fields after successful submission
+        }).catch((error) => {
+            handleClick("Error submitting form!", "error");
+        });
+    };
 
     return (
         <section id="contact">
@@ -15,7 +39,7 @@ function Contact() {
                 <div style={{ zIndex: "1" }}>
                     <div className="d-flex flex-column align-items-center mb-5">
                         <div className="d-flex flex-column align-items-center">
-                            <h1 className=" ContactHead">CONTACT</h1>
+                            <h1 className="ContactHead">CONTACT</h1>
                             <hr className="Hr" />
                         </div>
                         <div>
@@ -35,7 +59,7 @@ function Contact() {
                                 </div>
                                 <div className="d-flex flex-column">
                                     <label className="contactLabel py-2" htmlFor="message">Message</label>
-                                    <textarea {...register("message")} className="contactInp" name="message" id="message" cols="25" rows="10" placeholder="Enter your message" ></textarea>
+                                    <textarea {...register("message")} className="contactInp" name="message" id="message" cols="25" rows="10" placeholder="Enter your message"></textarea>
                                 </div>
                                 <div className="d-flex justify-content-end my-5">
                                     <button className="contactBtn" type="submit">Submit</button>
@@ -45,8 +69,12 @@ function Contact() {
                     </div>
                 </div>
             </div>
+
+            <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+                <Alert onClose={handleClose} severity={alertSeverity} variant="filled" sx={{ width: '100%' }}>
+                    {alertMessage}
+                </Alert>
+            </Snackbar>
         </section>
     );
 }
-
-export default Contact;
