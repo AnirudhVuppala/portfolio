@@ -27,7 +27,7 @@ function About() {
                                     <p>I'm open to <strong>Job</strong> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <strong>contact</strong> me.</p>
                                 </div>
                                 <div className="my-5">
-                                    <button className="contactBtn">CONTACT</button>
+                                    <a href="#contact"><button className="contactBtn">CONTACT</button></a>
                                 </div>
                             </Col>
                             <Col xs={12} md={6}>

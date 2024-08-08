@@ -24,7 +24,7 @@ function Home() {
                     <div>
                         <p className="contentP">A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
                     </div>
-                    <button className="projBtn">PROJECTS</button>
+                    <a href="#project"><button className="projBtn" >PROJECTS</button></a>
                     <div className="arrowSection">
                         <a href="#about"><span></span></a>
                     </div>
