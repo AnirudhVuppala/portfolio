@@ -16,7 +16,7 @@ function Navbaar() {
                     <Nav.Link className="mx-3 text-start" href="#about">// ABOUT</Nav.Link>
                     <Nav.Link className="mx-3 text-start" href="#project">// PROJECTS</Nav.Link>
                     <Nav.Link className="mx-3 text-start" href="#contact">// CONTACT</Nav.Link>
-                    <Nav.Link className="mx-3 text-start" href="https://docs.google.com/document/d/1nLBnTH0GDtkw6unl9yNswulZZtscHItE/edit?usp=sharing&ouid=103573858439537478775&rtpof=true&sd=true">// RESUME</Nav.Link>
+                    <Nav.Link className="mx-3 text-start" href="https://docs.google.com/document/d/19p-A0tpgMlVyMb4LBEe9RX5RwdrJdAWqn44JFllEKjc/edit?usp=sharing">// RESUME</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
